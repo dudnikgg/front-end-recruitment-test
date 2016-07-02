@@ -80,4 +80,12 @@
   }
 
   // Your custom JavaScript goes here
+  var button = document.querySelector('button[action="button"]');
+  var image = document.querySelector('section > img');
+  var imageContainer = image.parentNode;
+
+  button.onclick = function() {
+    var clone = image.cloneNode();
+    imageContainer.appendChild(clone);
+  };
 })();

@@ -265,7 +265,10 @@ gulp.task('generate-service-worker', ['copy-sw-scripts'], () => {
 //////////////////////////////// SNOWDOG //////////////////////////////////////
 ///////////////////////////////////////////////////////////////////////////////
 
-var symlink = require('gulp-symlink');
+// var symlink = require('gulp-symlink');
+// This plugin was DEPRECATED, so i use another
+
+var symlink = require('gulp-sym');
 
 gulp.task('submodule', function(){
   gulp.src('submodule/submodule.html')
