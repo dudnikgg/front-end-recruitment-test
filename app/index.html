@@ -49,6 +49,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
 
     <!-- Your styles -->
+    <link rel="stylesheet" href="styles/checkout.css">
     <link rel="stylesheet" href="styles/main.css">
   </head>
   <body class="mdl-demo mdl-color--grey-100 mdl-color-text--grey-700 mdl-base">
@@ -67,6 +68,7 @@
           <a href="#features" class="mdl-layout__tab">Details</a>
           <a href="#features" class="mdl-layout__tab">Technology</a>
           <a href="#features" class="mdl-layout__tab">FAQ</a>
+          <a href="#checkout" class="mdl-layout__tab">Checkout</a>
           <button class="mdl-button mdl-js-button mdl-button--fab mdl-js-ripple-effect mdl-button--colored mdl-shadow--4dp mdl-color--accent" id="add">
             <i class="material-icons" role="presentation">add</i>
             <span class="visuallyhidden">Add</span>
@@ -74,7 +76,7 @@
         </div>
       </header>
       <main class="mdl-layout__content">
-        <div class="mdl-layout__tab-panel is-active" id="overview">
+        <div class="mdl-layout__tab-panel" id="overview">
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp">
             <header class="section__play-btn mdl-cell mdl-cell--3-col-desktop mdl-cell--2-col-tablet mdl-cell--4-col-phone mdl-color--teal-100 mdl-color-text--white">
               <i class="material-icons">play_circle_filled</i>
@@ -225,6 +227,44 @@
                 Cupidatat labore nisi ut sunt voluptate quis sunt qui ad Lorem esse nisi. Ex esse velit ullamco incididunt occaecat dolore veniam tempor minim adipisicing amet. Consequat in exercitation est elit anim consequat cillum sint labore cillum. Aliquip mollit laboris ad labore anim.
               </p>
             </div>
+          </section>
+        </div>
+        <div class="mdl-layout__tab-panel is-active" id="checkout">
+          <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp bg-grey mdl-cell--12-col">
+            <form action="#" method="" class="form mdl-cell mdl-cell--8-col-desktop mdl-cell--6-col-tablet mdl-cell--4-col-phone mdl-grid">
+              <h3 class="checkout-title mdl-cell--12-col-desktop"><span>1</span>Personal information</h3>
+              <div class="mdl-cell mdl-cell--6-col-desktop">
+                <div class="form--block mdl-shadow--2dp">
+                  <label class="form--block__label">First Name</label>
+                  <input class="form--block__input" type="text" placeholder="Elon">
+                </div>
+              </div>
+              <div class="mdl-cell mdl-cell--6-col-desktop">
+                <div class="form--block mdl-shadow--2dp">
+                  <label class="form--block__label">Last Name</label>
+                  <input class="form--block__input" type="text" placeholder="Musk">
+                </div>
+              </div>
+              <div class="mdl-cell mdl-cell--12-col-desktop">
+                <div class="form--block mdl-shadow--2dp">
+                  <label class="form--block__label">Email</label>
+                  <input class="form--block__input" type="email" placeholder="elon@spacex.com">
+                </div>
+              </div>
+              <div class="mdl-cell mdl-cell--6-col-desktop">
+                <div class="form--block mdl-shadow--2dp">
+                  <label class="form--block__label">Email</label>
+                  <input class="form--block__input" type="email" placeholder="elon@spacex.com">
+                </div>
+              </div>
+              <div class="mdl-cell mdl-cell--6-col-desktop">
+                <div class="form--block mdl-shadow--2dp">
+                  <label class="form--block__label">Postal Code</label>
+                  <input class="form--block__input" type="email" placeholder="10001">
+                </div>
+              </div>
+            </form>
+
           </section>
         </div>
         <footer class="mdl-mega-footer">

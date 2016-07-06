@@ -1,0 +1,33 @@
+#checkout {
+  .section--center {
+    max-width: 80%;
+    padding: 40px 60px;
+  }
+  .form {
+    &--block {
+      background-color: #fff;
+      padding: 5px 15px 0;
+      border-radius: 4px;
+      &__input {
+        background-color: transparent;
+        border: none;
+        border-bottom: none;
+        border-radius: 0;
+        outline: none;
+        height: 3rem;
+        width: 100%;
+        font-size: 1rem;
+        padding: 0;
+        box-shadow: none;
+        box-sizing: content-box;
+        transition: all 0.3s;
+      }
+      &__label {
+        font-weight: bold;
+      }
+    }
+  }
+}
+.bg-grey {
+  background-color: #f3f3f3;
+}
