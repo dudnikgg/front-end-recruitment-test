@@ -1,31 +1,94 @@
+@import "materialize";
+
 #checkout {
   .section--center {
     max-width: 80%;
     padding: 40px 60px;
+  }
+  .checkout-title {
+    font-size: 16px;
+    text-transform: uppercase;
+    font-weight: 800;
+    color: #000;
+    position: relative;
+    margin-left: 5px;
+    margin-bottom: 5px;
+    min-height: 35px;
+    & span {
+      padding: 6px 9px;
+      background-color: #000;
+      color: #fff;
+      position: absolute;
+      border-radius: 20px;
+      left: -40px;
+      top: -6px;
+    }
   }
   .form {
     &--block {
       background-color: #fff;
       padding: 5px 15px 0;
       border-radius: 4px;
+      @extend .input-field;
       &__input {
-        background-color: transparent;
+        @extend .validate;
+        margin-bottom: 0;
+        margin-top: 20px;
         border: none;
-        border-bottom: none;
-        border-radius: 0;
-        outline: none;
-        height: 3rem;
-        width: 100%;
-        font-size: 1rem;
-        padding: 0;
         box-shadow: none;
-        box-sizing: content-box;
-        transition: all 0.3s;
       }
       &__label {
         font-weight: bold;
       }
     }
+    & button[type="submit"] {
+      margin-top: 20px;
+      width: 100%;
+      background-color: #66cc00;
+      color: #fff;
+      font-weight: 800;
+      min-height: 60px;
+      i {
+        margin-right: 10px;
+      }
+    }
+  }
+}
+.order {
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 4px;
+  margin-top: 93px;
+  &--inner {
+    padding: 10px;
+    border: 3px dotted #ebebeb;
+  }
+  &--line {
+    margin-top: 15px;
+    font-size: 16px;
+    color: #000;
+    font-weight: 600;
+    & span:last-child {
+      float: right;
+    }
+  }
+  &--tax {
+    margin: 30px 0 10px;
+    padding: 10px 0;
+    border-top: 3px dotted #ebebeb;
+    border-bottom: 3px dotted #ebebeb;
+    & .order--line:first-child {
+      margin: 0;
+    }
+  }
+  &--total {
+    span {
+      font-weight: 800;
+    }
+    span.price {
+      font-size: 28px;
+    }
+    margin-bottom: 75px;
   }
 }
 .bg-grey {

@@ -89,3 +89,6 @@
     imageContainer.appendChild(clone);
   };
 })();
+$(document).ready(function() {
+  $('select').material_select();
+});
