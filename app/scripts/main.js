@@ -20,6 +20,9 @@
 (function() {
   'use strict';
 
+  $(document).ready(function() {
+    $('select').material_select();
+  });
   // Check to make sure service workers are supported in the current browser,
   // and that the current page is accessed from a secure origin. Using a
   // service worker from an insecure origin will trigger JS console errors. See
@@ -80,15 +83,36 @@
   }
 
   // Your custom JavaScript goes here
-  var button = document.querySelector('button[action="button"]');
-  var image = document.querySelector('section > img');
-  var imageContainer = image.parentNode;
+  if (document.querySelector('button[action="button"]')) {
+    var button = document.querySelector('button[action="button"]');
+    button.onclick = function() {
+      var image = document.querySelector('section > img');
+      var imageContainer = image.parentNode;
+      var clone = image.cloneNode();
+      imageContainer.appendChild(clone);
+    };
+  }
 
-  button.onclick = function() {
-    var clone = image.cloneNode();
-    imageContainer.appendChild(clone);
-  };
+  // Form validation
+  if (document.getElementById('checkoutForm')) {
+    var form = document.getElementById('checkoutForm');
+    var formInput = form.getElementsByTagName('input');
+    form.onsubmit = function(event) {
+      event.preventDefault();
+
+      var error = 0;
+      for (var i = 0; i < formInput.length; i++) {
+        if (formInput[i].value === '') {
+          error++;
+        }
+      }
+
+      if (error === 0) {
+        alert('success!');
+      } else {
+        alert('ERROR! Fill all fields!');
+      }
+    };
+  }
 })();
-$(document).ready(function() {
-  $('select').material_select();
-});
+

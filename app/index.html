@@ -231,66 +231,66 @@
         </div>
         <div class="mdl-layout__tab-panel is-active" id="checkout">
           <section class="section--center mdl-grid mdl-grid--no-spacing mdl-shadow--2dp bg-grey mdl-cell--12-col">
-            <form action="#" method="" class="form mdl-cell mdl-cell--8-col-desktop mdl-grid">
+            <form action="#" method="" onsubmit="return" id="checkoutForm" class="form mdl-cell mdl-cell--8-col-desktop mdl-grid">
               <h3 class="checkout-title mdl-cell--12-col-desktop"><span>1</span>Personal information</h3>
               <div class="mdl-cell mdl-cell--6-col-desktop">
                 <div class="form--block mdl-shadow--2dp">
                   <label class="form--block__label">First Name</label>
-                  <input class="form--block__input" type="text" placeholder="Elon" pattern="[A-Za-z]">
+                  <input class="form--block__input" type="text" placeholder="Elon">
                 </div>
               </div>
               <div class="mdl-cell mdl-cell--6-col-desktop">
                 <div class="form--block mdl-shadow--2dp">
                   <label class="form--block__label">Last Name</label>
-                  <input class="form--block__input" type="text" placeholder="Musk" required pattern="[A-Za-z-0-9]+\s[A-Za-z-'0-9]+">
+                  <input class="form--block__input" type="text" placeholder="Musk">
                 </div>
               </div>
               <div class="mdl-cell mdl-cell--12-col-desktop">
                 <div class="form--block mdl-shadow--2dp">
                   <label class="form--block__label">Email</label>
-                  <input class="form--block__input" type="email" placeholder="elon@spacex.com" required pattern="/^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/">
+                  <input class="form--block__input" type="email" placeholder="elon@spacex.com" >
                 </div>
               </div>
               <div class="mdl-cell mdl-cell--6-col-desktop">
                 <div class="form--block mdl-shadow--2dp">
+                  <label class="form--block__label">Country</label>
                   <select name="country" id="">
                     <option value="usa" selected>United States</option>
                     <option value="poland">Poland</option>
                     <option value="sweden">Sweden</option>
                     <option value="ukraine">Ukraine</option>
                   </select>
-                  <label class="form--block__label">Country</label>
                 </div>
               </div>
               <div class="mdl-cell mdl-cell--6-col-desktop">
                 <div class="form--block mdl-shadow--2dp">
                   <label class="form--block__label">Postal Code</label>
-                  <input class="form--block__input" type="text" placeholder="10001" required >
+                  <input class="form--block__input" type="text" placeholder="10001" >
                 </div>
               </div>
               <div class="mdl-cell mdl-cell--12-col-desktop">
                 <div class="form--block mdl-shadow--2dp">
                   <label class="form--block__label">Phone Number</label>
-                  <input class="form--block__input" type="tel" placeholder="(212) 692-93-92" required >
+                  <input class="form--block__input" type="tel" placeholder="(212) 692-93-92" >
                 </div>
               </div>
               <h3 class="checkout-title mdl-cell--12-col-desktop"><span>2</span>Payment details</h3>
               <div class="mdl-cell mdl-cell--12-col-desktop">
                 <div class="form--block mdl-shadow--2dp">
                   <label class="form--block__label">Credit Card Number</label>
-                  <input class="form--block__input" type="text" placeholder="0000 - 0000 - 0000 - 0000" required >
+                  <input class="form--block__input" type="text" placeholder="0000 - 0000 - 0000 - 0000" >
                 </div>
               </div>
               <div class="mdl-cell mdl-cell--6-col-desktop">
                 <div class="form--block mdl-shadow--2dp">
                   <label class="form--block__label">Security Code</label>
-                  <input class="form--block__input" type="password" placeholder="***" required >
+                  <input class="form--block__input" type="password" placeholder="***" >
                 </div>
               </div>
               <div class="mdl-cell mdl-cell--6-col-desktop">
                 <div class="form--block mdl-shadow--2dp">
                   <label class="form--block__label">Expiration Date</label>
-                  <input class="form--block__input" type="text" placeholder="MM/YY" required >
+                  <input class="form--block__input" type="text" placeholder="MM/YY" >
                 </div>
               </div>
               <div class="mdl-cell mdl-cell--12-col-desktop">
@@ -387,8 +387,8 @@
     </div>
 
     <script src="https://storage.googleapis.com/code.getmdl.io/1.0.6/material.min.js"></script>
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script> -->
-     <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script> -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.js"></script>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
     <!-- build:js(app/) ../../scripts/main.min.js -->
     <script src="scripts/main.js"></script>
     <!-- endbuild -->
